@@ -23,14 +23,14 @@ function printArrayAgain(array, callback) {
         }
     }
     const numbersArray = [1,2,3,4,5,9,8,7,6];
-printArray(numbersArray, printArrayAgain);
+//printArray(numbersArray, printArrayAgain);
 //exercise
-function calculator(num1, num2, callbackOne, callbackTwo){
-    let result = callbackOne(num1, num2) + callbackTwo(num1, num2);
-    return SpeechRecognitionResultList;
-function subtractNumbers(num1, num2) {
-}
-}
+//function calculator(num1, num2, callbackOne, callbackTwo){
+    //let result = callbackOne(num1, num2) + callbackTwo(num1, num2);
+    //return SpeechRecognitionResultList;
+//function subtractNumbers(num1, num2) {
+//}
+//}
 //make a superHero function
 
 //Take in two callbacks
@@ -50,7 +50,7 @@ function anotherGreeting(){
 
 
 // solution
-function spider-man(superpowerOne, superpowerTwo){
+function spiderman(superpowerOne, superpowerTwo){
     let allSuperpowers = superpowerOne() + ' and ' +superpowerTwo();
     return allSuperpowers;
 }
@@ -63,4 +63,34 @@ function swingKick(){
     return kick;
 }
 
-console.log(spider-man(webBlaster, swingKick));
+console.log(spiderman(webBlaster, swingKick));
+
+function blastoff() {
+    let num = 0;
+    for (let i = 10; i >= num; i--){
+        console.log(i); //10, 9, 8, 7, 6....
+    }
+    console.log('Blast Off!!!!!')
+}
+
+setTimeout(blastoff, 5000);
+
+function printName(){
+    let num = 0;
+    for (let i = 10; i>= num; i--){
+        console.log(i);
+    }
+    console.log('MALIK!!')
+}
+
+setTimeout('MALIK!!' , 5000);
+
+//solution
+function printName(name){
+    console.log(name);
+}
+
+let myNameTwo = 'Malik'
+setTimeout(function(){
+    printName(myNameTwo);
+ }, 5000);
