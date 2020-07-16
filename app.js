@@ -85,7 +85,8 @@ function printName(){
 
 setTimeout('MALIK!!' , 5000);
 
-//solution
+//solution for set timeout
+
 function printName(name){
     console.log(name);
 }
@@ -94,3 +95,39 @@ let myNameTwo = 'Malik'
 setTimeout(function(){
     printName(myNameTwo);
  }, 5000);
+
+ // for each 
+
+ const collectables = ['bomag', 'CMI Corp', 'wirtgen', 'catepillar']
+
+
+// collectables.forEach(function(element){
+  //   console.log(element);
+ //});
+
+ collectables.forEach(element => {
+     console.log(element);
+     if (element.length > 6) {
+         console.log(element);
+     }
+ });
+
+ //map
+
+ const someNumbers = [24, 65, 347, 34];
+
+ const addFive = someNumbers.map(element => {
+     return element + 5;
+     
+});
+console.log(addFive);
+
+//filter
+const filterednumbers = someNumbers.filter(element => {
+    if (element > 50) {
+        return element;
+    }
+});
+console.log(filterednumbers)
+
+//[65, 347]
